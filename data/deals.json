@@ -1,0 +1,602 @@
+{
+  "_note": "Sample offers, fees, reward rates and card networks for the demo. Replace them with the real ones from each app and your card statements before relying on the results.",
+  "household_cards": [
+    {
+      "id": "axis_atlas",
+      "name": "Axis Atlas",
+      "bank": "Axis",
+      "type": "credit",
+      "network": "Visa",
+      "owner": "Hari",
+      "reward_value_pct": 2.0
+    },
+    {
+      "id": "icici_sapphiro",
+      "name": "ICICI Sapphiro",
+      "bank": "ICICI",
+      "type": "credit",
+      "network": "Visa",
+      "owner": "Hari",
+      "reward_value_pct": 1.0
+    },
+    {
+      "id": "sbi_iocl_debit",
+      "name": "SBI IOCL Debit",
+      "bank": "SBI",
+      "type": "debit",
+      "network": "RuPay",
+      "owner": "Hari",
+      "reward_value_pct": 0.0
+    },
+    {
+      "id": "scapia",
+      "name": "Scapia",
+      "bank": "Federal",
+      "type": "credit",
+      "network": "Visa",
+      "owner": "Wife",
+      "reward_value_pct": 2.0
+    },
+    {
+      "id": "icici_amazon",
+      "name": "ICICI Amazon Pay",
+      "bank": "ICICI",
+      "type": "credit",
+      "network": "Visa",
+      "owner": "Wife",
+      "reward_value_pct": 1.0
+    },
+    {
+      "id": "hdfc_debit",
+      "name": "HDFC Debit",
+      "bank": "HDFC",
+      "type": "debit",
+      "network": "Visa",
+      "owner": "Wife",
+      "reward_value_pct": 0.0
+    },
+    {
+      "id": "upi",
+      "name": "Any UPI",
+      "bank": "UPI",
+      "type": "upi",
+      "network": "UPI",
+      "owner": "Either",
+      "reward_value_pct": 0.0
+    }
+  ],
+  "categories": [
+    {
+      "id": "restaurant",
+      "name": "Restaurant bill",
+      "icon": "🍽️",
+      "amount_label": "Bill amount",
+      "default_amount": 3250,
+      "price_varies": false,
+      "log_category": "dining",
+      "platforms": [
+        {
+          "id": "direct",
+          "name": "Pay directly",
+          "fee_pct": 0,
+          "bank_offers": [],
+          "discount_pct": 0,
+          "discount_cap": 0,
+          "fee_flat": 0,
+          "user_added": false
+        },
+        {
+          "id": "eazydiner",
+          "name": "EazyDiner",
+          "fee_pct": 0,
+          "bank_offers": [
+            {
+              "bank": "Axis",
+              "card_type": "credit",
+              "cards": [
+                "Axis Atlas",
+                "Axis Magnus",
+                "Axis Reserve"
+              ],
+              "pct": 20,
+              "cap": 1000,
+              "min_bill": 2500,
+              "days": [],
+              "label": "20% off with Axis Atlas, Magnus & Reserve"
+            },
+            {
+              "bank": "Axis",
+              "card_type": "credit",
+              "exclude_cards": [
+                "Axis Atlas",
+                "Axis Magnus",
+                "Axis Reserve"
+              ],
+              "pct": 10,
+              "cap": 500,
+              "min_bill": 2000,
+              "days": [],
+              "label": "10% off with other Axis credit cards"
+            },
+            {
+              "bank": "ICICI",
+              "card_type": "credit",
+              "cards": [
+                "ICICI Sapphiro",
+                "ICICI Emeralde"
+              ],
+              "pct": 15,
+              "cap": 750,
+              "min_bill": 2000,
+              "days": [
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "label": "15% off with ICICI Sapphiro & Emeralde, weekends"
+            },
+            {
+              "bank": "Federal",
+              "card_type": "credit",
+              "cards": [
+                "Scapia"
+              ],
+              "pct": 20,
+              "cap": 300,
+              "min_bill": 1500,
+              "days": [],
+              "label": "20% off with Scapia"
+            }
+          ],
+          "discount_pct": 10,
+          "discount_cap": 400,
+          "fee_flat": 0,
+          "user_added": false
+        },
+        {
+          "id": "district",
+          "name": "District",
+          "fee_pct": 1,
+          "bank_offers": [
+            {
+              "bank": "HDFC",
+              "card_type": "any",
+              "pct": 15,
+              "cap": 1000,
+              "min_bill": 2500,
+              "days": [],
+              "label": "15% off with HDFC credit & debit cards"
+            },
+            {
+              "bank": "any",
+              "card_type": "credit",
+              "networks": [
+                "RuPay"
+              ],
+              "pct": 10,
+              "cap": 250,
+              "min_bill": 1000,
+              "days": [],
+              "label": "10% off with any RuPay credit card"
+            },
+            {
+              "bank": "SBI",
+              "card_type": "debit",
+              "networks": [
+                "RuPay"
+              ],
+              "pct": 10,
+              "cap": 500,
+              "min_bill": 1500,
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu"
+              ],
+              "label": "10% off with SBI RuPay debit cards, weekdays"
+            },
+            {
+              "bank": "UPI",
+              "card_type": "upi",
+              "pct": 5,
+              "cap": 100,
+              "min_bill": 1000,
+              "days": [],
+              "label": "5% off on UPI payments"
+            }
+          ],
+          "discount_pct": 10,
+          "discount_cap": 300,
+          "fee_flat": 0,
+          "user_added": false
+        },
+        {
+          "id": "swiggy_dineout",
+          "name": "Swiggy Dineout",
+          "fee_pct": 0,
+          "bank_offers": [
+            {
+              "bank": "Axis",
+              "card_type": "credit",
+              "exclude_cards": [
+                "Axis Atlas",
+                "Axis Magnus"
+              ],
+              "pct": 15,
+              "cap": 1500,
+              "min_bill": 3000,
+              "days": [
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "label": "15% off with Axis credit cards (excl. Atlas & Magnus), weekends"
+            },
+            {
+              "bank": "ICICI",
+              "card_type": "credit",
+              "cards": [
+                "ICICI Amazon Pay"
+              ],
+              "pct": 10,
+              "cap": 400,
+              "min_bill": 1500,
+              "days": [],
+              "label": "10% off with ICICI Amazon Pay card"
+            },
+            {
+              "bank": "any",
+              "card_type": "credit",
+              "networks": [
+                "Visa"
+              ],
+              "tiers_note": "Visa Signature/Infinite",
+              "pct": 5,
+              "cap": 200,
+              "min_bill": 2000,
+              "days": [],
+              "label": "5% off with Visa credit cards"
+            }
+          ],
+          "discount_pct": 15,
+          "discount_cap": 350,
+          "fee_flat": 0,
+          "user_added": false
+        }
+      ]
+    },
+    {
+      "id": "movies",
+      "name": "Movie tickets",
+      "icon": "🎬",
+      "amount_label": "Ticket total",
+      "default_amount": 900,
+      "price_varies": false,
+      "log_category": "entertainment",
+      "platforms": [
+        {
+          "id": "bookmyshow",
+          "name": "BookMyShow",
+          "discount_pct": 0,
+          "discount_cap": 0,
+          "fee_pct": 0,
+          "fee_flat": 60,
+          "user_added": false,
+          "bank_offers": [
+            {
+              "bank": "ICICI",
+              "card_type": "credit",
+              "cap": 250,
+              "min_bill": 400,
+              "days": [],
+              "label": "Buy 1 get 1 up to ₹250 with ICICI credit cards",
+              "pct": 50,
+              "cards": [
+                "ICICI Sapphiro",
+                "ICICI Amazon Pay"
+              ]
+            },
+            {
+              "bank": "Axis",
+              "card_type": "credit",
+              "cap": 200,
+              "min_bill": 500,
+              "days": [],
+              "label": "10% off up to ₹200 with Axis credit cards",
+              "pct": 10
+            }
+          ]
+        },
+        {
+          "id": "district",
+          "name": "District",
+          "discount_pct": 0,
+          "discount_cap": 0,
+          "fee_pct": 0,
+          "fee_flat": 40,
+          "user_added": false,
+          "bank_offers": [
+            {
+              "bank": "HDFC",
+              "card_type": "any",
+              "cap": 150,
+              "min_bill": 500,
+              "days": [],
+              "label": "20% off up to ₹150 with HDFC cards",
+              "pct": 20
+            },
+            {
+              "bank": "any",
+              "card_type": "credit",
+              "cap": 0,
+              "min_bill": 600,
+              "days": [],
+              "label": "₹100 off with RuPay credit cards",
+              "flat": 100,
+              "networks": [
+                "RuPay"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cinema_app",
+          "name": "Cinema chain app",
+          "discount_pct": 5,
+          "discount_cap": 100,
+          "fee_pct": 0,
+          "fee_flat": 25,
+          "user_added": false,
+          "bank_offers": [
+            {
+              "bank": "Federal",
+              "card_type": "credit",
+              "cap": 200,
+              "min_bill": 500,
+              "days": [],
+              "label": "15% off up to ₹200 with Scapia",
+              "pct": 15,
+              "cards": [
+                "Scapia"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "box_office",
+          "name": "Box office",
+          "discount_pct": 0,
+          "discount_cap": 0,
+          "fee_pct": 0,
+          "fee_flat": 0,
+          "user_added": false,
+          "bank_offers": []
+        }
+      ]
+    },
+    {
+      "id": "bus",
+      "name": "Bus tickets",
+      "icon": "🚌",
+      "amount_label": "Fare",
+      "default_amount": 1800,
+      "price_varies": true,
+      "log_category": "travel",
+      "platforms": [
+        {
+          "id": "redbus",
+          "name": "redBus",
+          "discount_pct": 5,
+          "discount_cap": 150,
+          "fee_pct": 0,
+          "fee_flat": 0,
+          "user_added": false,
+          "bank_offers": [
+            {
+              "bank": "ICICI",
+              "card_type": "credit",
+              "cap": 250,
+              "min_bill": 800,
+              "days": [],
+              "label": "10% off up to ₹250 with ICICI credit cards",
+              "pct": 10
+            },
+            {
+              "bank": "UPI",
+              "card_type": "upi",
+              "cap": 0,
+              "min_bill": 500,
+              "days": [],
+              "label": "₹50 off on UPI",
+              "flat": 50
+            }
+          ]
+        },
+        {
+          "id": "abhibus",
+          "name": "AbhiBus",
+          "discount_pct": 8,
+          "discount_cap": 200,
+          "fee_pct": 0,
+          "fee_flat": 0,
+          "user_added": false,
+          "bank_offers": [
+            {
+              "bank": "SBI",
+              "card_type": "debit",
+              "cap": 200,
+              "min_bill": 700,
+              "days": [],
+              "label": "12% off up to ₹200 with SBI debit cards",
+              "pct": 12
+            }
+          ]
+        },
+        {
+          "id": "mmt_bus",
+          "name": "MakeMyTrip",
+          "discount_pct": 0,
+          "discount_cap": 0,
+          "fee_pct": 1.5,
+          "fee_flat": 0,
+          "user_added": false,
+          "bank_offers": [
+            {
+              "bank": "Axis",
+              "card_type": "credit",
+              "cap": 400,
+              "min_bill": 1000,
+              "days": [],
+              "label": "15% off up to ₹400 with Axis credit cards",
+              "pct": 15
+            },
+            {
+              "bank": "HDFC",
+              "card_type": "debit",
+              "cap": 150,
+              "min_bill": 800,
+              "days": [],
+              "label": "10% off up to ₹150 with HDFC debit cards",
+              "pct": 10
+            }
+          ]
+        },
+        {
+          "id": "operator",
+          "name": "Bus operator website",
+          "discount_pct": 0,
+          "discount_cap": 0,
+          "fee_pct": 0,
+          "fee_flat": 0,
+          "user_added": false,
+          "bank_offers": []
+        }
+      ]
+    },
+    {
+      "id": "flights",
+      "name": "Flights",
+      "icon": "✈️",
+      "amount_label": "Fare",
+      "default_amount": 12500,
+      "price_varies": true,
+      "log_category": "travel",
+      "platforms": [
+        {
+          "id": "mmt",
+          "name": "MakeMyTrip",
+          "discount_pct": 0,
+          "discount_cap": 0,
+          "fee_pct": 0,
+          "fee_flat": 299,
+          "user_added": false,
+          "bank_offers": [
+            {
+              "bank": "ICICI",
+              "card_type": "credit",
+              "cap": 1500,
+              "min_bill": 5000,
+              "days": [],
+              "label": "12% off up to ₹1,500 with ICICI credit cards",
+              "pct": 12
+            },
+            {
+              "bank": "Axis",
+              "card_type": "credit",
+              "cap": 0,
+              "min_bill": 8000,
+              "days": [],
+              "label": "₹1,000 off with Axis Atlas",
+              "flat": 1000,
+              "cards": [
+                "Axis Atlas"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cleartrip",
+          "name": "Cleartrip",
+          "discount_pct": 0,
+          "discount_cap": 0,
+          "fee_pct": 0,
+          "fee_flat": 199,
+          "user_added": false,
+          "bank_offers": [
+            {
+              "bank": "Federal",
+              "card_type": "credit",
+              "cap": 2000,
+              "min_bill": 5000,
+              "days": [],
+              "label": "10% off up to ₹2,000 with Scapia",
+              "pct": 10,
+              "cards": [
+                "Scapia"
+              ]
+            },
+            {
+              "bank": "HDFC",
+              "card_type": "any",
+              "cap": 1000,
+              "min_bill": 6000,
+              "days": [],
+              "label": "8% off up to ₹1,000 with HDFC cards",
+              "pct": 8
+            }
+          ]
+        },
+        {
+          "id": "ixigo",
+          "name": "ixigo",
+          "discount_pct": 0,
+          "discount_cap": 0,
+          "fee_pct": 0,
+          "fee_flat": 249,
+          "user_added": false,
+          "bank_offers": [
+            {
+              "bank": "SBI",
+              "card_type": "debit",
+              "cap": 0,
+              "min_bill": 6000,
+              "days": [],
+              "label": "₹600 off with SBI debit cards",
+              "flat": 600
+            },
+            {
+              "bank": "UPI",
+              "card_type": "upi",
+              "cap": 0,
+              "min_bill": 5000,
+              "days": [],
+              "label": "₹250 off on UPI",
+              "flat": 250
+            }
+          ]
+        },
+        {
+          "id": "airline",
+          "name": "Airline website",
+          "discount_pct": 0,
+          "discount_cap": 0,
+          "fee_pct": 0,
+          "fee_flat": 0,
+          "user_added": false,
+          "bank_offers": [
+            {
+              "bank": "Axis",
+              "card_type": "credit",
+              "cap": 750,
+              "min_bill": 5000,
+              "days": [],
+              "label": "5% off up to ₹750 with Axis credit cards",
+              "pct": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "upi": [
+    {
+      "id": "upi_sbi",
+      "name": "SBI UPI",
+      "bank": "SBI",
+      "cashback_rules": [
+        {"category": "food", "cashback_pct": 1.0},
+        {"category": "default", "cashback_pct": 0.5}
+      ],
+      "max_cashback_per_txn": 50
+    },
+    {
+      "id": "upi_hdfc",
+      "name": "HDFC UPI",
+      "bank": "HDFC",
+      "cashback_rules": [
+        {"category": "fuel", "cashback_pct": 2.0},
+        {"category": "default", "cashback_pct": 0.5}
+      ],
+      "max_cashback_per_txn": 75
+    },
+    {
+      "id": "upi_icici",
+      "name": "ICICI UPI",
+      "bank": "ICICI",
+      "cashback_rules": [
+        {"category": "default", "cashback_pct": 1.5}
+      ],
+      "max_cashback_per_txn": 100
+    }
+  ],
+  "credit_cards": [
+    {
+      "id": "cc_hdfc_millennia",
+      "name": "HDFC Millennia",
+      "cashback_rules": [
+        {"merchant_keywords": ["amazon", "flipkart"], "cashback_pct": 5.0},
+        {"category": "default", "cashback_pct": 1.0}
+      ],
+      "annual_fee": 1000,
+      "active_offers": [
+        "5% cashback on Amazon & Flipkart (max ₹200/month)",
+        "1% cashback on all other spends"
+      ]
+    },
+    {
+      "id": "cc_axis_flipkart",
+      "name": "Axis Flipkart",
+      "cashback_rules": [
+        {"merchant_keywords": ["flipkart", "myntra"], "cashback_pct": 5.0},
+        {"category": "default", "cashback_pct": 1.5}
+      ],
+      "annual_fee": 500,
+      "active_offers": [
+        "5% cashback on Flipkart & Myntra",
+        "4% on preferred merchants",
+        "1.5% unlimited cashback on all others"
+      ]
+    },
+    {
+      "id": "cc_sbi_simplyclick",
+      "name": "SBI SimplyCLICK",
+      "cashback_rules": [
+        {"merchant_keywords": ["amazon"], "cashback_pct": 10.0},
+        {"merchant_keywords": ["swiggy", "zomato", "bookmyshow", "cleartrip"], "cashback_pct": 5.0},
+        {"category": "default", "cashback_pct": 1.25}
+      ],
+      "annual_fee": 499,
+      "active_offers": [
+        "10X reward points on Amazon",
+        "5X reward points on Swiggy, Zomato, BookMyShow, Cleartrip",
+        "1X on all other spends"
+      ]
+    },
+    {
+      "id": "cc_icici_coral",
+      "name": "ICICI Coral",
+      "cashback_rules": [
+        {"category": "dining", "cashback_pct": 2.0},
+        {"category": "groceries", "cashback_pct": 1.0},
+        {"category": "default", "cashback_pct": 0.5}
+      ],
+      "annual_fee": 500,
+      "active_offers": [
+        "2% cashback on dining",
+        "1% on groceries",
+        "Buy 1 Get 1 on BookMyShow (2x/month)"
+      ]
+    }
+  ]
+}
